@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "logger_test", "logger_test.vcxproj", "{7585A8F7-C9DC-455F-965E-C207B0C7E246}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7585A8F7-C9DC-455F-965E-C207B0C7E246}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7585A8F7-C9DC-455F-965E-C207B0C7E246}.Debug|Win32.Build.0 = Debug|Win32
+		{7585A8F7-C9DC-455F-965E-C207B0C7E246}.Release|Win32.ActiveCfg = Release|Win32
+		{7585A8F7-C9DC-455F-965E-C207B0C7E246}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

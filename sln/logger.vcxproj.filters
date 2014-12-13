@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc\detail">
+      <UniqueIdentifier>{22d529bc-7e14-4ffe-9387-07f86b384eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\detail">
+      <UniqueIdentifier>{a6e11cb4-c4d9-449a-8e98-87bb3f909d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{595b22ae-609b-4e42-81d3-64aba3493998}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\detail\hex_convert.h">
+      <Filter>inc\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\detail\string_format.h">
+      <Filter>inc\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\detail\system_time.h">
+      <Filter>inc\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\logger.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\detail\hex_convert.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\detail\string_format.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\detail\system_time.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\logger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\cfg\logger.cfg">
+      <Filter>cfg</Filter>
+    </None>
+  </ItemGroup>
+</Project>
