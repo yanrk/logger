@@ -1,14 +1,3 @@
-/********************************************************
- * Description : test logger
- * Data        : 2014-01-07 09:11:12
- * Author      : yanrk
- * Email       : yanrenke@viewat.com.cn
- * Blog        :
- * Version     : 1.0
- * History     :
- * Copyright(C): viewat & ewanshang
- ********************************************************/
-
 #include "test.h"
 #include "logger.h"
 

@@ -2,10 +2,9 @@
  * Description : string operator functions
  * Data        : 2014-12-02 10:05:11
  * Author      : yanrk
- * Email       : feeling_dxl@yeah.net & ken_scott@163.com
+ * Email       : yanrkchina@hotmail.com
  * Blog        : blog.csdn.net/cxxmaker
  * Version     : 1.0
- * History     :
  * Copyright(C): 2013 - 2015
  ********************************************************/
 

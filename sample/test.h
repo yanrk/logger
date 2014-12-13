@@ -1,19 +1,18 @@
 /********************************************************
  * Description : test logger
- * Data        : 2014-01-07 09:11:12
+ * Data        : 2014-12-09 12:22:42
  * Author      : yanrk
- * Email       : yanrenke@viewat.com.cn
- * Blog        :
+ * Email       : yanrkchina@hotmail.com
+ * Blog        : blog.csdn.net/cxxmaker
  * Version     : 1.0
- * History     :
- * Copyright(C): viewat & ewanshang
+ * Copyright(C): 2013 - 2015
  ********************************************************/
 
-#ifndef VIEWAT_SIMPLE_LOGGER_TEST_H
-#define VIEWAT_SIMPLE_LOGGER_TEST_H
+#ifndef STUPID_LOGGER_TEST_H
+#define STUPID_LOGGER_TEST_H
 
 
 extern void test_logger(void);
 
 
-#endif // VIEWAT_SIMPLE_LOGGER_TEST_H
+#endif // STUPID_LOGGER_TEST_H
