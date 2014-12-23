@@ -98,12 +98,12 @@ LoggerWrapper::LoggerWrapper()
     m_warn_logger = Logger::getLogger("warn_logger");
     m_error_logger = Logger::getLogger("error_logger");
     m_fatal_logger = Logger::getLogger("fatal_logger");
-    memset(&s_logger_type_open, 0x01, sizeof(s_logger_type_open));
+    logger_enable_all();
 }
 
 LoggerWrapper::~LoggerWrapper()
 {
-    memset(&s_logger_type_open, 0x00, sizeof(s_logger_type_open));
+    logger_disable_all();
 }
 
 LoggerWrapper & LoggerWrapper::instance()
@@ -237,12 +237,12 @@ void logger_disable(logger_type type)
 
 void logger_enable_all()
 {
-    memset(&s_logger_type_open, 0x01, sizeof(s_logger_type_open));
+    memset(s_logger_type_open, 0x01, sizeof(s_logger_type_open));
 }
 
 void logger_disable_all()
 {
-    memset(&s_logger_type_open, 0x00, sizeof(s_logger_type_open));
+    memset(s_logger_type_open, 0x00, sizeof(s_logger_type_open));
 }
 
 void logger_message(logger_type type, const char * file, const char * func, size_t line, const char * format, ...)
