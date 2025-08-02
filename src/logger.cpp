@@ -25,9 +25,9 @@
 static size_t current_thread_id()
 {
 #ifdef _MSC_VER
-    return(static_cast<size_t>(GetCurrentThreadId()));
+    return static_cast<size_t>(GetCurrentThreadId());
 #else
-    return(static_cast<size_t>(pthread_self()));
+    return static_cast<size_t>(pthread_self());
 #endif // _MSC_VER
 }
 
@@ -108,7 +108,7 @@ LoggerWrapper::~LoggerWrapper()
 
 LoggerWrapper & LoggerWrapper::instance()
 {
-    return(s_logger_wrapper);
+    return s_logger_wrapper;
 }
 
 void LoggerWrapper::log_message(logger_type type, const char * file, const char * func, size_t line, const char * format, ...)

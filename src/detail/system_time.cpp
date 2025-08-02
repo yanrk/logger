@@ -12,7 +12,7 @@
 
 int64_t simple_get_time()
 {
-    return(static_cast<int64_t>(time(nullptr)));
+    return static_cast<int64_t>(time(nullptr));
 }
 
 struct tm simple_get_localtime()
@@ -26,7 +26,7 @@ struct tm simple_get_localtime()
     localtime_r(&time_now, &tm_now);
 #endif // _MSC_VER
 
-    return(tm_now);
+    return tm_now;
 }
 
 struct tm simple_get_gmtime()
@@ -40,7 +40,7 @@ struct tm simple_get_gmtime()
     gmtime_r(&time_now, &tm_now);
 #endif // _MSC_VER
 
-    return(tm_now);
+    return tm_now;
 }
 
 struct timeval simple_gettimeofday()
@@ -56,7 +56,7 @@ struct timeval simple_gettimeofday()
     gettimeofday(&tv_now, nullptr);
 #endif // _MSC_VER
 
-    return(tv_now);
+    return tv_now;
 }
 
 int simple_get_timezone()
@@ -77,11 +77,11 @@ int simple_get_timezone()
         first_time = false;
     }
 
-    return(time_diff);
+    return time_diff;
 }
 
 int simple_get_day_of_week()
 {
     struct tm tm_now = simple_get_localtime();
-    return(tm_now.tm_wday);
+    return tm_now.tm_wday;
 }

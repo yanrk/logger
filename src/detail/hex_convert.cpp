@@ -29,7 +29,7 @@ bool binary_to_hex(const unsigned char src, char dst[3], bool lower)
 {
     if (nullptr == dst)
     {
-        return(false);
+        return false;
     }
 
     if (lower)
@@ -44,21 +44,21 @@ bool binary_to_hex(const unsigned char src, char dst[3], bool lower)
     }
     dst[2] = ' ';
 
-    return(true);
+    return true;
 }
 
 bool hex_encode(const unsigned char * src, size_t src_len, char * dst, size_t dst_len, bool lower)
 {
     if (nullptr == src || nullptr == dst || HEX_ENCODE_SIZE(src_len) > dst_len)
     {
-        return(false);
+        return false;
     }
 
     for (size_t index = 0; index < src_len; ++index)
     {
         if (!binary_to_hex(src[0], dst, lower))
         {
-            return(false);
+            return false;
         }
 
         src += 1;
@@ -67,10 +67,10 @@ bool hex_encode(const unsigned char * src, size_t src_len, char * dst, size_t ds
 
     dst[0] = '\0';
 
-    return(true);
+    return true;
 }
 
 bool hex_encode(const void * src, size_t src_len, char * dst, size_t dst_len, bool lower)
 {
-    return(hex_encode(reinterpret_cast<const unsigned char *>(src), src_len, dst, dst_len, lower));
+    return hex_encode(reinterpret_cast<const unsigned char *>(src), src_len, dst, dst_len, lower);
 }

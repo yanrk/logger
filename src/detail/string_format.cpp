@@ -16,7 +16,7 @@ size_t simple_vsnprintf(char * buffer, size_t bufsiz, const char * fmt, va_list 
 {
     if (nullptr == buffer || 0 == bufsiz || nullptr == fmt || nullptr == args)
     {
-        return(0);
+        return 0;
     }
 
 #ifdef _MSC_VER
@@ -31,14 +31,14 @@ size_t simple_vsnprintf(char * buffer, size_t bufsiz, const char * fmt, va_list 
         buffer[ret_siz] = '\0';
     }
 
-    return(ret_siz);
+    return ret_siz;
 }
 
 size_t simple_snprintf(char * buffer, size_t bufsiz, const char * fmt, ...)
 {
     if (nullptr == fmt)
     {
-        return(0);
+        return 0;
     }
 
     va_list args = nullptr;
@@ -49,5 +49,5 @@ size_t simple_snprintf(char * buffer, size_t bufsiz, const char * fmt, ...)
 
     va_end(args);
 
-    return(ret_siz);
+    return ret_siz;
 }
